@@ -1,19 +1,33 @@
 {
   "name": "cleanco",
-  "version": "1.0.2",
-  "description": "JS implementation of cleanco python",
-  "main": "index.js",
+  "description": "Tupescript implementation of cleanco python",
+  "version": "1.0.3",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.6"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rajaru/cleanco.git"
+    "url": "git+https://github.com/dhalbrook/cleanco.git"
   },
-  "author": "",
+  "author": "Dolan Halbrook",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/rajaru/cleanco/issues"
+    "url": "https://github.com/dhalbrook/cleanco/issues"
   },
-  "homepage": "https://github.com/rajaru/cleanco#readme"
+  "homepage": "https://github.com/dhalbrook/cleanco#readme"
 }

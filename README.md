@@ -1,10 +1,13 @@
 # cleanco
-JS implementation of cleanco python (modified) https://github.com/psolin/cleanco
+Typescript implementation of cleanco python (modified) https://github.com/psolin/cleanco
 
 # Installation
 npm install cleanco
 
 # Usage
-const cleanco = require('cleanco');  
-console.log( cleanco.clean('Microsoft Corp.') );  
-console.log( cleanco.type('Microsoft Corp.') );  
+```typescript
+import { clean, type } from 'cleanco';
+
+console.log(clean('Microsoft Corp.'));
+console.log(type('Microsoft Corp.')); 
+```
